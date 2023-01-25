@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css" class="css">
+    <title>Cadastrar Prod</title>
+</head>
+<body>
+    <p>Faça seu Cadastro</p>
+    <div class="email">
+        <h3 style="padding-left: 78px; margin-bottom: 13px;">Email</h3>
+        <label for="email"></label>
+        <input type="text" id="email" />
+    </div>
+    <div class="senha">
+        <h3 style="padding-left: 78px; margin-bottom: 13px;">Senha</h3>
+        <label for="senha"></label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+           <div class="nome">
+            <h3 style="padding-left: 78px; margin-bottom: 13px;">Nome</h3>
+            <label for="nome"></label>
+            <input type="text" id="nome" />
+           </div>
+           <div class="telefone">
+            <h3 style="padding-left: 78px; margin-bottom: 13px;">Telefone</h3>
+            <label for="Telefone"></label>
+            <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+           </div>
+    </div>
+    <button class="button">Cadastrar</button>
+</body>
+</html>
